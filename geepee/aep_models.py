@@ -10,17 +10,19 @@ import sys
 import math
 import numpy as np
 import scipy.linalg as npalg
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import time
 import pdb
 import pprint
 import collections
 
-from config import *
-from utils import profile
-from kernels import *
-from base_models import Base_Model
-from base_models import Base_SGP_Layer, Base_SGPR, Base_SGPLVM, Base_SDGPR, Base_SGPSSM
+from geepee.config import *
+from geepee.utils import profile
+from geepee.kernels import *
+from geepee.base_models import Base_Model
+from geepee.base_models import Base_SGP_Layer, Base_SGPR, Base_SGPLVM, Base_SDGPR, Base_SGPSSM
 
 
 class SGP_Layer(Base_SGP_Layer):
